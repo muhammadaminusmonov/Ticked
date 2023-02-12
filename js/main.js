@@ -46,9 +46,23 @@ function mine() {
     document.getElementById("human").value > 7 &&
     document.getElementById("human").value < 31 &&
     document.getElementById("gender").value == "male" &&
+    document.getElementById("country").value == "ru"
+  ) {
+    document.getElementById("result").innerText = "for you 40$";
+  } else if (
+    document.getElementById("human").value > 7 &&
+    document.getElementById("human").value < 31 &&
+    document.getElementById("gender").value == "male" &&
     document.getElementById("country").value == "other"
   ) {
     document.getElementById("result").innerText = "for you 45$";
+  } else if (
+    document.getElementById("human").value > 30 &&
+    document.getElementById("human").value < 61 &&
+    document.getElementById("gender").value == "male" &&
+    document.getElementById("country").value == "uzb"
+  ) {
+    document.getElementById("result").innerText = "for you 50$";
   } else if (
     document.getElementById("human").value > 30 &&
     document.getElementById("human").value < 61 &&
@@ -96,6 +110,12 @@ function mine() {
     document.getElementById("country").value == "ru"
   ) {
     document.getElementById("result").innerText = "for you 80$";
+  } else if (
+    document.getElementById("human").value > 60 &&
+    document.getElementById("gender").value == "female" &&
+    document.getElementById("country").value == "other"
+  ) {
+    document.getElementById("result").innerText = "for you 85$";
   } else if (
     document.getElementById("human").value > 60 &&
     document.getElementById("gender").value == "male" &&
