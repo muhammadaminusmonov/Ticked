@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Buy the ticket</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h4>
+        ! you can write only for country uzb, ru, other. For gender male, female
+        and For number you can enter any number !
+      </h4>
+      <form>
+        <div class="form">
+          <input required id="human" placeholder="your age" type="text" />
+          <input required id="gender" placeholder="your gender" type="text" />
+          <input required id="country" placeholder="your country" type="text" />
+        </div>
+        <button class="submit" onclick="mine()" type="button" id="sumbit">
+          sumbit
+        </button>
+      </form>
+
+      <button class="result" id="result">your ticket is cost...</button>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
